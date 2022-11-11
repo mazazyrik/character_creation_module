@@ -3,7 +3,7 @@ from random import randint
 from graphic_arts.start_game_banner import run_screensaver
 
 
-def attack(char_name: str, char_class: str) -> str:
+def attack(char_name: str, char_class: str):
     """Аттака."""
     if char_class == 'warrior':
         return (f'{char_name} нанёс урон противнику'
@@ -16,7 +16,7 @@ def attack(char_name: str, char_class: str) -> str:
                 f'нанёс урон противнику равный {5 + randint(-3, -1)}')
 
 
-def defence(char_name: str, char_class: str) -> str:
+def defence(char_name: str, char_class: str):
     """Защита."""
     if char_class == 'warrior':
         return (f'{char_name} блокировал {10 + randint(5, 10)} урона')
@@ -26,7 +26,7 @@ def defence(char_name: str, char_class: str) -> str:
         return (f'{char_name} блокировал {10 + randint(2, 5)} урона')
 
 
-def special(char_name: str, char_class: str) -> str:
+def special(char_name: str, char_class: str):
     """Спецаильный навык."""
     if char_class == 'warrior':
         return (f'{char_name} применил специальное '
